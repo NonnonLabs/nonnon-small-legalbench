@@ -1,0 +1,19 @@
+{
+  "method": "POST",
+  "url": "https://small.nonnon.ai/v1/chat/completions",
+  "headers": {
+    "Authorization": "Bearer YOUR_TOKEN_HERE",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "model": "nonnon1-small-router",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Mark: Banana for fresh fruit. Generic, descriptive, suggestive, arbitrary, or fanciful?"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 16
+  }
+}

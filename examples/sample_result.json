@@ -1,0 +1,8 @@
+{
+  "task": "abercrombie",
+  "reference": "generic",
+  "prediction": "generic",
+  "score": 1.0,
+  "latency_seconds": 2.1,
+  "error": null
+}

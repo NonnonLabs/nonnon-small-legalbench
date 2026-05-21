@@ -1,0 +1,51 @@
+{
+  "model": "nonnon1-small-router",
+  "endpoint": "https://small.nonnon.ai/v1/chat/completions",
+  "benchmark": "LegalBench public test split",
+  "runs": [
+    {
+      "name": "one_per_task_public",
+      "date_utc": "2026-05-21",
+      "rows": 162,
+      "tasks": 162,
+      "macro": 0.9862068965517241,
+      "micro": 0.9862068965517241,
+      "notes": "One public test row per LegalBench task."
+    },
+    {
+      "name": "stratified50_public",
+      "date_utc": "2026-05-21",
+      "rows": 8088,
+      "tasks": 162,
+      "macro": 0.9505821311613427,
+      "micro": 0.9506619139811099,
+      "notes": "Up to 50 public test rows per LegalBench task."
+    }
+  ],
+  "route_scores_stratified50": {
+    "B1_AGENTIC_CITATION": {
+      "tasks": 2,
+      "mean": 0.86
+    },
+    "B1_AGENTIC_RULE": {
+      "tasks": 1,
+      "mean": 0.987071205584325
+    },
+    "B1_RULE_RECALL": {
+      "tasks": 1,
+      "mean": 1.0
+    },
+    "B2_COT_RALPH": {
+      "tasks": 15,
+      "mean": 0.949333333333333
+    },
+    "DIRECT_ANSWER": {
+      "tasks": 142,
+      "mean": 0.951318549595445
+    },
+    "ROUTER_SYMBOLIC_SARA_NUMERIC": {
+      "tasks": 1,
+      "mean": 0.96
+    }
+  }
+}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this reproduction recipe, cite LegalBench and NONNON-small."
+title: "NONNON-small on LegalBench"
+authors:
+  - family-names: "NONNON Team"
+date-released: "2026-05-21"
+url: "https://nonnon.ai"
+preferred-citation:
+  type: article
+  title: "LegalBench: A Collaboratively Built Benchmark for Measuring Legal Reasoning in Large Language Models"
+  authors:
+    - family-names: "Guha"
+      given-names: "Neel"
+    - family-names: "Nyarko"
+      given-names: "Julian"
+    - family-names: "Ho"
+      given-names: "Daniel E."
+  year: 2023
+  url: "https://arxiv.org/abs/2308.11462"

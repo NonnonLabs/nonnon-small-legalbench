@@ -1,0 +1,15 @@
+{
+  "id": "chatcmpl-example",
+  "object": "chat.completion",
+  "model": "nonnon1-small-router",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "generic"
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}
