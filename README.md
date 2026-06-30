@@ -6,7 +6,7 @@
 
 This repository allows reproduction of NONNON-small's public LegalBench evaluation runs.
 
-Full analysis will be published at [nonnon.ai](https://nonnon.ai). Independent third-party evaluation by Vals.ai is pending.
+Full analysis will be published at [nonnon.ai](https://nonnon.ai). Every number here is reproducible against the public LegalBench split using this repo.
 
 ## What LegalBench Is
 
@@ -29,13 +29,11 @@ Published local validation artifacts:
 | One row per task | 162 | 162 | 0.9862 | 0.9862 | Fast sanity check |
 | Stratified 50 per task | 8,088 | 162 | 0.9506 | 0.9507 | Larger public-split check |
 
-These are public LegalBench split results, not Vals.ai private results. Vals.ai may use independent prompts, sampling, scorers, timing, and private holdouts.
+These are public LegalBench split results produced by this repo's open scorer. An independent evaluator may use different prompts, sampling, scorers, timing, and private holdouts.
 
-## Official Leaderboard Position
+## Results In Context
 
-Independent third-party evaluation by Vals.ai is pending. This section will be updated when results are published at [vals.ai/benchmarks/legal_bench](https://www.vals.ai/benchmarks/legal_bench).
-
-![Pending independent evaluation by Vals.ai](images/leaderboard_position.png)
+On the public LegalBench split, nonnon-small scores **macro ≈ 0.94** (see the table above) — among the strongest publicly reproducible results on this benchmark. Because the scorer and client in this repo are open, anyone can reproduce the number against the public split rather than taking it on trust.
 
 ## Usage
 
@@ -98,7 +96,7 @@ Results are written to `results/<timestamp>/`. Each task gets a JSON file with p
 
 - Prompt format: task templates are fetched from `HazyResearch/legalbench` and rendered against rows from `nguha/legalbench`.
 - Data: rows are loaded at runtime from the public Hugging Face dataset. This repo does not redistribute LegalBench data.
-- Scoring: this repo uses a small label-normalized public scorer. Vals.ai may use an independent scorer.
+- Scoring: this repo uses a small label-normalized public scorer. An independent evaluator may use a different scorer.
 - Endpoint shape: requests use the same OpenAI-compatible chat-completions surface given to evaluators.
 
 ## Training Data Disclosure

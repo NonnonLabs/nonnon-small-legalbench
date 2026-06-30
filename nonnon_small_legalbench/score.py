@@ -15,9 +15,9 @@ def normalize(text: object) -> str:
 def score_prediction(prediction: str, reference: object) -> float:
     """Public, label-normalized scorer.
 
-    This is intentionally small and auditable. Vals.ai may use an independent
-    scorer; this repository exists to make public-split reproduction easy, not
-    to constrain third-party evaluation.
+    This is intentionally small and auditable. An independent evaluator may use
+    a different scorer; this repository exists to make public-split reproduction
+    easy, not to constrain third-party evaluation.
     """
     pred = normalize(prediction)
     ref = normalize(reference)
